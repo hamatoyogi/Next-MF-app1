@@ -13,9 +13,8 @@ const {
         filename: "static/runtime/remoteEntry.js",
         remotes: {},
         exposes: {
-            './Exposed': './components/Exposed',
-            // weird that i need to add the .ts extention
-            './add': './lib/add.ts',
+            './Exposed': '@/components/Exposed',
+            './add': 'lib/add',
             './multiply': './lib/multiply',
         },
         shared: [],

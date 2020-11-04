@@ -2,7 +2,7 @@ const Exposed = () => {
     return (
         <div>
             This is exposed from APP1
-            adding some more shit!s
+            <h2>Hello!</h2>
         </div>
     )
 }

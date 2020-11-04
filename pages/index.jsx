@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import Exposed from '../components/Exposed';
-// whey do i need to add .ts extension to import?
-import add from '../lib/add.ts';
-import multiply from '../lib/multiply';
+import add from 'lib/add';
+import multiply from 'lib/multiply';
 
 export default function Home() {
   return (

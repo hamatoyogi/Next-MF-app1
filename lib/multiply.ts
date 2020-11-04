@@ -1,4 +1,4 @@
-function multiply(x) {
+function multiply(x: number): number {
     return x *  2;
 }
 
