@@ -1,3 +1,18 @@
+# Next MF App1
+
+add this to .env.local:
+
+```
+# Local
+
+HOSTNAME = localhost
+PORT = 3000
+PROTOCOL = http
+NEXT_DIR = _next
+
+PUBLIC_PATH = $PROTOCOL://$HOSTNAME:$PORT/$NEXT_DIR/
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
