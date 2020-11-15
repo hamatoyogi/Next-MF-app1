@@ -12,6 +12,8 @@ const {
         library: { type: config.output.libraryTarget, name: "app1" },
         filename: "static/runtime/remoteEntry.js",
         remotes: {},
+        // here I was just playing around with the different export options in terms of path;
+        // first and second use an alias from tsconfig, third is a regular relative path
         exposes: {
             './Exposed': '@/components/Exposed',
             './add': 'lib/add',
