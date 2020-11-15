@@ -28,6 +28,8 @@ const {
       config.plugins.push(new MergeRuntime());
   
       if (!isServer) {
+        // TODO prefix with NEXT_PUBLIC for browser compatibility:
+        // https://nextjs.org/docs/basic-features/environment-variables#exposing-environment-variables-to-the-browser
         config.output.publicPath = process.env.PUBLIC_PATH;
       }
   
