@@ -18,6 +18,9 @@ const {
             './Exposed': '@/components/Exposed',
             './add': 'lib/add',
             './multiply': './lib/multiply',
+            './mainApp': 'pages/index',
+            './about': 'pages/about',
+            './app': 'pages/_app'
         },
         shared: [],
       };
@@ -26,6 +29,9 @@ const {
       withModuleFederation(config, options, mfConf);
   
       config.plugins.push(new MergeRuntime());
+
+      // set cross origin chunk loading
+      config.output.crossOriginLoading = 'anonymous';
   
       if (!isServer) {
         // TODO prefix with NEXT_PUBLIC for browser compatibility:

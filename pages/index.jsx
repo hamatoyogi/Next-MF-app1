@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Exposed from '../components/Exposed';
 import add from 'lib/add';
 import multiply from 'lib/multiply';
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -13,6 +14,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <nav>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+        </nav>
         <h1 className={styles.title}>
           App1
         </h1>
