@@ -12,7 +12,10 @@
   },
   "dependencies": {
     "@module-federation/nextjs-mf": "^0.0.2",
+    "encoding": "^0.1.13",
+    "jimp": "^0.16.1",
     "next": "10.0.0",
+    "probe-image-size": "^6.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
