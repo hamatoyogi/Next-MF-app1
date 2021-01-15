@@ -16,6 +16,7 @@ export default function Home() {
         <h1 className={styles.title}>App1</h1>
         <h2>
           Public path: <code>{process.env.NEXT_PUBLIC_PATH}</code>
+          Public Vercel path: <code>{process.env.NEXT_PUBLIC_VERCEL_URL}</code>
         </h2>
         <Exposed />
         <span>Adding 1: {add(1)}</span>
